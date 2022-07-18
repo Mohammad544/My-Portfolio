@@ -1,0 +1,657 @@
+html{
+    scroll-behavior: smooth;
+    background: #202020;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background: #202020;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#myname{
+    color: white;
+    display: inline-block;
+    position: relative;
+    right: 10%;
+    top: 0.7em;
+    font-size: 12pt;
+    
+}
+
+
+
+/*styles rules for my nav bar*/
+nav{
+    float: right;
+    position: relative;
+    left: 10%;
+    bottom: 1.1em;
+    padding: 20px;
+}
+
+nav ul{
+    margin: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 2em;
+    padding-top: 5px;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 9pt;
+}
+
+nav a:hover{
+    color: #F0FFFF;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    top: 33px;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+
+
+/*Style rules for my homepage*/
+#my-img{
+    width: 200px;
+    height: 250px;
+    background-image: url(my-images/mypicture.jpg);
+    background-size: 100%;
+    position: relative;
+    left: 65%;
+    bottom: 5em;
+}
+
+.homepage{
+    background-color:#202020;
+    padding-top: 15.9%;
+
+    border-top:1.5em solid;
+    border-bottom:1.5em solid;
+    border-left:7.0em solid;
+    border-right:7.0em solid;
+
+    border-color: #4682B4;
+}
+
+#log-in-index{
+    float: left;
+    position: relative;
+    bottom: 18.2em;
+    right: 9.8em;
+    height: 2.3em;
+    width: 11em;
+    background-color:gray;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+#log-out-index{
+    float: left;
+    position: relative;
+    bottom: 18.2em;
+    right: 9.8em;
+    height: 2.3em;
+    width: 11em;
+    background-color:gray;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+#intro{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30pt;
+    color: white;
+    position: relative;
+    bottom: 7.3em;
+    right: 20%;
+    text-align: center;
+}
+
+
+
+/*Style rules for my aboutme page*/
+.aboutme{
+    background-color: #202020;
+    padding-top: 15%;
+    
+    border-bottom:1.5em solid;
+    border-left:7.0em solid;
+    border-right:7.0em solid;
+
+    border-color: #4682B4;
+}
+
+h2{
+    color: white;
+    font-size: 30pt;
+    position: relative;
+}
+
+ul{
+    color: white;
+    position: relative;
+}
+
+.aboutme h2{
+    bottom: 2em;
+ 
+}
+
+.aboutme p {
+    color: white;
+    font-size: 14pt;
+    font-family: sans-serif;
+    position: relative;
+    bottom: 2em;
+
+}
+
+#my-img2{
+    width: 200px;
+    height: 250px;
+    background-image: url(my-images/mypicture2.jpg);
+    background-size: 100%;
+    position: relative;
+    left: 75%;
+    bottom: 16.5em;
+}
+
+
+
+/*Style rules for my education and qualifications page*/
+.education-and-qualifications{
+    background-color: #202020;
+    padding-top: 15%;
+    
+    border-bottom:1.5em solid;
+    border-left:7.0em solid;
+    border-right:7.0em solid;
+
+    border-color: #4682B4;
+}
+
+.education-and-qualifications h2{
+    bottom: 3em;
+    
+}
+
+.education-and-qualifications ul{
+    bottom: 4em;
+    right: 2em;
+    font-size: 14pt;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+
+
+
+/*Style rules for my skills and achievements page*/
+.skills-and-achievements{
+    background-color: #202020;
+    padding-top: 15%;
+    
+    border-bottom:1.5em solid;
+    border-left:7.0em solid;
+    border-right:7.0em solid;
+
+    border-color: #4682B4;
+}
+
+.skills-and-achievements h2{
+    bottom: 3em;
+}
+
+.skills-and-achievements ul{
+
+    bottom: 4em;
+    right: 2em;
+
+    font-size: 14pt;
+    font-family: sans-serif;
+}
+
+#maths-certificate-img{
+    width: 200px;
+    height: 300px;
+    background-image: url(my-images/mathematicscertificate.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 3em;
+}
+
+figcaption{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14pt;
+    position: relative;
+}
+
+.skills-and-achievements figcaption{
+    bottom: 3em;
+}
+
+
+
+/*Style rules for my experience page*/
+.experience{
+    background-color: #202020;
+    padding-top: 15%;
+    
+    border-bottom:1.5em solid;
+    border-left:7.0em solid;
+    border-right:7.0em solid;
+
+    border-color: #4682B4;
+}
+
+.experience h2{
+    bottom: 3em;
+}
+
+.experience ul{
+
+    bottom: 4em;
+    right: 2em;
+
+    font-size: 14pt;
+    font-family: sans-serif;
+}
+
+
+
+/*Style rules for my portfolio page*/
+.portfolio{
+    background-color: #202020;
+    padding-top: 15%;
+    
+    border-bottom:1.5em solid;
+    border-left:7.0em solid;
+    border-right:7.0em solid;
+
+    border-color: #4682B4;
+}
+
+.portfolio h2{
+    bottom: 3em;
+}
+
+#adventure-game-img{
+    position: relative;
+    bottom: 3em;
+}
+
+#quiz-img{
+    position: relative;
+    left: 6em;
+}
+
+.portfolio figcaption{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14pt;
+}
+
+
+
+/*Style rules for my contact page*/
+.contact{
+    background-color: #202020;
+    padding-top: 15%;
+    
+    border-bottom:1.5em solid;
+    border-left:7.0em solid;
+    border-right:7.0em solid;
+
+    border-color: #4682B4;
+}
+
+.contact h2{
+    bottom: 3em;
+}
+
+h4{
+    color: white;
+    position: relative;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 4em;
+}
+#p1{
+    color: white;
+    position: relative;
+    bottom: 2.5em;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact a{
+    color: white;
+}
+
+#p2{
+    color: white;
+    position: relative;
+    float: right;
+    right: 23.1em;
+    bottom: 6.5em;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#copyright-p{
+    color: white;
+    position: relative;
+    left: 7.5em;
+    bottom: 1.3em;
+    float: right;
+}
+
+button{
+    cursor: pointer;
+}
+
+.contact button{
+    position: relative;
+    left: 11em;
+    top: 0.3em;
+    font-size: 22pt;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    color: #202020;
+    border: none;
+}
+
+
+
+/*Style rules for my login page*/
+.login-page {
+    text-align: center;
+}
+
+.login-page h2{
+    position: relative;
+    top: 180px;
+    padding-bottom: 70px;
+}
+
+.login-page form{
+    position: relative;
+    top: 160px;
+    height: 100px;
+}
+
+.login-page input{
+    width: 300px;
+    height: 30px;
+}
+
+.loginbtn{
+    height: 40px;
+    width: 200px;
+    font-size: 16pt;
+    font-family: monospace;
+    position: relative;
+    top: 25px;
+    background-color: lawngreen;
+    border: none;
+}
+
+.cancelbtn{
+    height: 30px;
+    width: 60px;
+    font-family: monospace;
+    position: relative;
+    top: 50px;
+    right: 80px;
+    background-color: red;
+    border: none;
+}
+
+.registeraccessbtn{
+    height: 30px;
+    width: 75px;
+    font-family: monospace;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    background-color: #4682B4;
+    border: none;
+}
+
+
+
+/*Style rules for my register page*/
+.register-page {
+    text-align: center;
+}
+
+.register-page h2{
+    position: relative;
+    top: 180px;
+    padding-bottom: 70px;
+}
+
+.register-page form{
+    position: relative;
+    top: 160px;
+    height: 100px;
+}
+
+.register-page input{
+    width: 300px;
+    height: 30px;
+}
+
+.rbtn{
+    height: 40px;
+    width: 200px;
+    font-size: 16pt;
+    font-family: monospace;
+    position: relative;
+    top: 25px;
+    background-color: lawngreen;
+    border: none;
+}
+
+.cbtn{
+    height: 30px;
+    width: 60px;
+    font-family: monospace;
+    position: relative;
+    top: 50px;
+    background-color: red;
+    border: none;
+}
+
+
+
+/*Style rules for my add blog page*/
+.add-blog-page {
+    text-align: center;
+}
+
+.add-blog-page h2{
+    position: relative;
+    top: 100px;
+    right: 60px;
+}
+
+.add-blog-page form{
+    position: relative;
+    top: 160px;
+    height: 100px;
+}
+
+#titlebox{
+    width: 700px;
+    padding-bottom: 40px;
+}
+
+#postbox{
+    position: relative;
+    width: 700px;
+    padding-bottom: 200px;
+    top: 20px;
+    white-space: initial;
+    
+}
+
+.postbtn{
+    height: 40px;
+    width: 200px;
+    font-size: 16pt;
+    color: white;
+    font-family: monospace;
+    position: relative;
+    top: 75px;
+    right: 100px;
+    background-color: gray;
+    border: none;
+}
+
+.clearbtn{
+    height: 40px;
+    width: 200px;
+    font-size: 16pt;
+    color: white;
+    font-family: monospace;
+    position: relative;
+    top: 75px;
+    left: 100px;
+    background-color: gray;
+    border: none;
+}
+
+/*Style rule for log out button in addPost.php*/
+#log-out{
+
+    height: 30px;
+    width: 100px;
+    position: relative;
+    bottom: 100px;
+    right: 150px;
+    float: right;
+    font-size: 14pt;
+    background-color:gray;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+
+/*Style rules for my view post page*/
+#view_posts{
+    height: 30px;
+    width: 150px;
+    background-color: gray;
+    position: relative;
+    float: left;
+    top: 2em;
+    left: 5em;
+    font-size: 14pt;
+    text-decoration: none;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+/*Style rule for log out button in viewBlog.php*/
+#log-out-2 {
+    position: relative;
+    float: right;
+    height: 30px;
+    width: 100px;
+    bottom: 2px;
+    font-size: 14pt;
+    background-color:gray;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+/*Style rule for the date and time displayed in my viewblog.php page*/
+#date-and-time{
+    position: relative;
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+
+}
+
+/*Style rule for the title displayed in my viewblog.php page*/
+#title{
+    position: relative;
+    text-align: center;
+    font-size: 34px;
+
+}
+
+/*Style rule for the post displayed in my viewblog.php page*/
+#post{
+    position: relative;
+    text-align: center;
+    font-size: 14pt;
+    color: white;
+
+}
+
+.delete{
+    position: relative;
+    text-align: center;
+
+}
+
+#add-post-link{
+    position: relative;
+    float: right;
+    right: 250px;
+    top: 5px;
+    font-size: 14pt;
+    color: white;
+}
+
+#delete_link{
+    color: red;
+    text-decoration: none;
+    text-align: center;
+}
